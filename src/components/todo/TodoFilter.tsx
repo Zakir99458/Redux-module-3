@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "../ui/button";
 import {
   DropdownMenu,
@@ -10,6 +11,7 @@ import {
 } from "../ui/dropdown-menu";
 
 const TodoFilter = () => {
+  const [position, setPosition] = useState("bottom");
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
